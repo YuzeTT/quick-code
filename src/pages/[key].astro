@@ -17,4 +17,4 @@ export function getStaticPaths() {
 const { link } = Astro.props;
 ---
 
-{ link.type === 'list' ? <Page link={link} hero={yaml.hero} /> : <Go link={link.link} client:only  /> }
+{ link.type === 'list' ? <Page link={link} heroInfo={yaml.hero} /> : <Go link={link.link} client:only  /> }
