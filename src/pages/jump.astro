@@ -1,0 +1,12 @@
+---
+export interface Props {
+	link: any
+}
+
+const { link } = Astro.props;
+---
+
+<script is:inline>
+  window.open(link.url)
+  console.log(link)
+</script>

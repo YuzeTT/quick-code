@@ -1,0 +1,18 @@
+hero:
+  name: YuzeTT
+  introduction: 点我看站长女装
+links: 
+  - url: yi
+    type: list
+    title: 价目表
+    remarks: 我很可爱请给我钱 awa
+    list: 
+      - title: 基础占卜
+        remarks: 破事就选我
+        price: 随缘
+      - title: 大事同卜
+        remarks: 多人共同解卦
+        price: 30.00
+  - url: bili
+    type: jump
+    link: https://space.bilibili.com/102046047

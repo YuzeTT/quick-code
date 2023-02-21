@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Page from './page.astro';
+import Jump from './jump.astro';
+import Go from '../components/Go';
+import Hero from '../components/Hero.astro';
+import TheProduct from '../components/TheProduct.astro';
+import yaml from '../../config.yaml';
+export function getStaticPaths() {
+  return yaml.links.map((link:any) => {
+    return {
+      params: { key: link.url },
+      props: { link },
+    }
+  })
+}
+const { link } = Astro.props;
+---
+
+{ link.type === 'list' ? <Page link={link} hero={yaml.hero} /> : <Go link={link.link} client:only  /> }
